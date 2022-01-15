@@ -1,6 +1,7 @@
 import Navigo from "navigo";
 import AboutPage from "./pages/about";
 import Dashboard from "./pages/admin/dashboard";
+import AdminNewsPage from "./pages/admin/news";
 import HomePage from "./pages/home";
 import NewsPage from "./pages/news";
 
@@ -15,5 +16,7 @@ router.on({
     "/about": () => print(AboutPage),
     "/news": () => print(NewsPage),
     "/admin/dashboard": () => print(Dashboard),
+    "/admin/news": () => print(AdminNewsPage),
+    "/admin/product": () => print(Dashboard),
 });
 router.resolve();
