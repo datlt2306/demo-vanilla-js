@@ -1,21 +1,16 @@
-/* eslint-disable import/no-unresolved */
-import Banner from "../components/banner";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 
-const HomePage = {
+const NewsPage = {
     render() {
-        return /* html */`
+        return `
             <div class="max-w-5xl mx-auto">
                 <header>
                     ${Header.render()}
                     ${Nav.render()}
                 </header>
-                <section>
-                    ${Banner.render()}
-                </section>
                 <section class="news">
-                    <h2 class="text-2xl text-[#272f53] font-semibold my-4 uppercase">Tin tức học tập</h2>
+                    <h2 class="text-2xl text-[#272f53] font-semibold my-4 uppercase">Tin tức</h2>
                     <div class="grid grid-cols-3 gap-8">
                         <div class="border border-gray-400 px-4 py-3">
                             <a href=""> <img src="https://picsum.photos/300/300" /> </a>
@@ -35,7 +30,8 @@ const HomePage = {
                     </div>
                 </section>
             </div>
+        
         `;
     },
 };
-export default HomePage;
+export default NewsPage;
